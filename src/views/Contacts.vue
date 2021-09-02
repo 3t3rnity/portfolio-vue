@@ -1,6 +1,6 @@
 <template>
   <div>
-    About
+    Contacts
   </div>
 </template>
 
@@ -8,8 +8,4 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
-div {
-  background: purple;
-}
-</style>
+<style lang="scss" scoped></style>

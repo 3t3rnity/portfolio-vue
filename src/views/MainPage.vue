@@ -1,7 +1,5 @@
 <template>
-  <div>
-    About
-  </div>
+  <div>Hello World</div>
 </template>
 
 <script>
@@ -10,6 +8,6 @@ export default {};
 
 <style lang="scss" scoped>
 div {
-  background: purple;
+  background: pink;
 }
 </style>
