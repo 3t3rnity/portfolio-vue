@@ -56,7 +56,7 @@ export default {
       //   this.transitionName = toDepth < fromDepth ? 'slide' : 'slideback';
       const indexTo = this.menuList.findIndex((el) => el.to === to.path);
       const indexFrom = this.menuList.findIndex((el) => el.to === from.path);
-      this.transitionName = indexTo > indexFrom ? 'slide' : 'slideback';
+      this.transitionName = indexTo > indexFrom ? 'slideback' : 'slide';
       //   console.log(to, from);
     },
   },
@@ -65,6 +65,9 @@ export default {
 
 <style lang="scss" scoped>
 #app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   background: rgb(154, 58, 180);
   background: -moz-linear-gradient(
     90deg,
@@ -85,7 +88,9 @@ export default {
 }
 
 #header {
+  position: absolute;
   background: white;
+  width: 100%;
   height: 50px;
   > ul {
     display: flex;
@@ -102,8 +107,18 @@ export default {
     }
   }
 }
+
+#transition-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper {
-  height: 100vh;
+    width: 95%;
+  height: 80%;
 }
 .slide-leave-active,
 .slide-enter-active {
